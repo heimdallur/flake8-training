@@ -4,6 +4,9 @@ class MyFriend:
 
     def __init__(self):
         self.dayborn = 'Monday'
+    @property
+    def dayborn(self):
+        return self.dayborn
 
     @classmethod
     def getName(cls):
@@ -17,3 +20,4 @@ if __name__ == '__main__':
     special.getAge()
 
     print(special.__getattribute__('dayborn'))
+    print(special.dayborn)
